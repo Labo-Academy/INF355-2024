@@ -1,5 +1,10 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+fun String.salutation(): String {
+    return "Bonjour"
+}
+
 fun main() {
 
     // Ceci est un commentaire sur une ligne
@@ -22,7 +27,7 @@ fun main() {
 
     val byte: Byte = 1          // 1 Oc
     val short: Short = 2        // 2 Oc
-    val int: Int = 3            // 4 Oc
+    var int: Int = 3            // 4 Oc
     val long: Long = 4L         // 8 Oc
 
     val float: Float = 3.0f     // 4 Oc
@@ -107,8 +112,16 @@ fun main() {
         println("$index : $value")
     }
 
-    
+    while (int != 0){
+        int %= 2
+    }
 
+    do {
+        int %= 2
+    }while (int != 0)
+
+
+    println("Salutation of type String: ${string.salutation()}")
 
 
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
@@ -121,3 +134,27 @@ fun main() {
         println("i = $i")
     }
 }
+
+fun salutation(): Unit {
+    println("Bonjour")
+}
+
+fun salutation2(name: String, age: Int): String {
+    return if (age > 20){
+        "Bonjour grand $name"
+    } else {
+        "Bonjour petit $name"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
