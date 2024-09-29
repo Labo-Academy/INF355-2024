@@ -68,6 +68,47 @@ fun main() {
     // char2 = d
 
 
+    if (int == int2){
+       println("Ok")
+    }else{
+        println("Not Ok")
+    }
+
+    val rest = if (int == int3){
+        "Equals"
+    } else{
+        "Not Equals"
+    }
+
+
+    when(int){
+        5 -> println("is 5")
+        6 -> println("is 6")
+        7 -> println("is 7")
+        else -> println("orther value")
+    }
+
+    val reslt2 = when(int2){
+        5 -> 5.0
+        6 -> 6.0
+        7 -> 7.0
+        else -> 8.0
+    }
+
+    for (i in 1..10 step 2){
+        println(i)
+    }
+
+    for ((index, value) in array.withIndex()){
+        println("$index : $value")
+    }
+
+    for ((index, value) in (1..10).withIndex()){
+        println("$index : $value")
+    }
+
+    
+
 
 
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
