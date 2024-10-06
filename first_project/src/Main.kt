@@ -187,13 +187,15 @@ fun main() {
     val ints = arrayOf(1, 2, 3, 4, 5)
     val ints2 = intArrayOf(1, 2, 3, 4, 5)
     val ints3 = arrayOf<Int>(1, 2, 3, 4, 5)
-    val ints4 = Array<Int>(15) {elt -> elt + 1}
+    val ints4 = Array<Int>(15){elt -> elt + 1}
 
     ints4.forEach { elt -> print(" $elt") }
     // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
     println(ints.get(3))
     println(ints[3])
     // 4
+    ints.contains(4)
     ints.set(3, 15)
     ints[3] = 15
     println(ints[3])

@@ -14,11 +14,12 @@ class Student(nom: String, age: Int) : Person3(nom, age) {
 }
 
 class Teacher(nom: String, age: Int, private var salary: Double) : Person3(nom, age) {
+
     private fun teach(){
         println("Teacher")
     }
-    override fun walk() {
-        println("$nom $age - walk - Teacher")
+     override fun walk() {
+        println("$nom $age $salary - walk - Teacher")
     }
 }
 
