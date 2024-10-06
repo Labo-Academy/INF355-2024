@@ -72,6 +72,42 @@ fun main() {
     println("char2 = $char2")
     // char2 = d
 
+    // Concaténation
+    val str = "Test" + " 1"
+    val str2 = "Je fais : $str"
+    val str3 = "Taille de str2: ${str.length}"
+
+    val phrase = """Bonjour,
+        |Je suis Wilfried Okono.
+        |Dev Web et Mobile (Laravel, Vuejs, Reactjs et Flutter)
+    """.trimMargin()
+
+    println(phrase)
+
+    val str4 = "Douala"
+    val str5 = "Duala"
+
+    println("str4[0] = ${str4.get(0)}")
+
+    println("str4[0] = ${str4[0]}")
+
+
+    println("str4 == str5 ? ${str4.equals(str5)}")
+
+    println("str4 == str5 ? ${str4 == str5}")
+
+
+    // Substring
+    val nomComplet = "Wilfried Okono"
+
+    println("Prénom = ${nomComplet.subSequence(0,8)}")
+    // Prénom = Wilfried
+    println("okono exist ? ${nomComplet.contains("okono")}")
+    //okono exist ? false
+    println("okono exist ? ${nomComplet.contains("okono", true)}")
+    //okono exist ? true
+
+
 
     if (int == int2){
        println("Ok")
@@ -87,6 +123,7 @@ fun main() {
 
 
     when(int){
+        0, 1, 2, 3, 4 -> println("is 4")
         5 -> println("is 5")
         6 -> println("is 6")
         7 -> println("is 7")
@@ -94,14 +131,20 @@ fun main() {
     }
 
     val reslt2 = when(int2){
+        in 1..4 -> 4.0
         5 -> 5.0
         6 -> 6.0
         7 -> 7.0
         else -> 8.0
     }
 
+
     for (i in 1..10 step 2){
         println(i)
+    }
+
+    for (index in array.indices){
+        println("$index : $index")
     }
 
     for ((index, value) in array.withIndex()){
@@ -114,10 +157,13 @@ fun main() {
 
     while (int != 0){
         int %= 2
+        int = 0
+
     }
 
+    int = 3
     do {
-        int %= 2
+        int--
     }while (int != 0)
 
 
@@ -133,20 +179,41 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+
+
+    val somme = {num1: Int, num2: Int -> num1 + num2}
+    println("10 + 5 = ${somme(10,5)}")
+
+    val ints = arrayOf(1, 2, 3, 4, 5)
+    val ints2 = intArrayOf(1, 2, 3, 4, 5)
+    val ints3 = arrayOf<Int>(1, 2, 3, 4, 5)
+    val ints4 = Array<Int>(15) {elt -> elt + 1}
+
+    ints4.forEach { elt -> print(" $elt") }
+    // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    println(ints.get(3))
+    println(ints[3])
+    // 4
+    ints.set(3, 15)
+    ints[3] = 15
+    println(ints[3])
+    // 15
+
+
+
 }
 
 fun salutation(): Unit {
     println("Bonjour")
 }
 
-fun salutation2(name: String, age: Int): String {
+fun salutation2(name: String, age: Int = 100): String {
     return if (age > 20){
         "Bonjour grand $name"
     } else {
         "Bonjour petit $name"
     }
 }
-
 
 
 

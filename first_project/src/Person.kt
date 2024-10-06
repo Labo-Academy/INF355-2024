@@ -1,4 +1,12 @@
-open class Person(var name : String, protected var age: Int) {
+class Person(var name : String, protected var age: Int) {
+
+    var email: String = ""
+        get() = field
+        set(value) {field = "Email : $value" }
+
+    constructor(name: String, age: Int, email: String, ) : this(name, age){
+        this.email = email
+    }
     constructor(name: String) : this(name, 0)
     constructor(): this("Toto")
 
@@ -8,6 +16,8 @@ open class Person(var name : String, protected var age: Int) {
 }
 
 fun main(args: Array<String>) {
-    var person = Etudiant(  "Test", 15, 15.0)
+    val person = Person(  )
+    val person2 = Person( "William Shakespeare" , 1, "test@example.com" )
     person.salution()
+    println(person2.email)
 }
