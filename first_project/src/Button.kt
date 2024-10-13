@@ -1,9 +1,19 @@
-interface Clickable {
+interface EventListener{
+    fun clicked()
+}
+
+interface Clickable : EventListener {
+    override fun clicked() {
+        println("clicked")
+    }
+
     fun click()
     fun show() {
         println("I'm clickable!")
     }
 }
+
+
 
 class Button : Clickable {
     override fun click() {

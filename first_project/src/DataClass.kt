@@ -15,11 +15,15 @@ fun main(args: Array<String>) {
     println("person4 : $person4")
     // person4 : Personne(name=Toto, age=18)
 
-    println("hashCode : preson1 => ${person1.hashCode()} , preson2 => ${person2.hashCode()}")
+    println("hashCode : preson1 => ${person1.hashCode()} , preson4 => ${person4.hashCode()}, preson2 => ${person2.hashCode()}")
     // hashCode : preson1 => 71750727 , preson2 => 71750727
 
     println("person1.name = ${person1.component1()}")
     // person1.name = John
     println("person1.age = ${person1.component2()}")
     //person1.age = 18
+
+    val (name, age) = person1
+
+    println("$name, $age")
 }
