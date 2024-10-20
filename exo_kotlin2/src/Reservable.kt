@@ -1,0 +1,4 @@
+interface Reservable
+{
+    fun reserver()
+}
