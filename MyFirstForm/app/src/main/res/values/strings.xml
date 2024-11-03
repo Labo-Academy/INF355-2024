@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My First Form</string>
+    <string name="inscription">Inscription</string>
+    <string name="label_name">Nom :</string>
+    <string name="placehoder_entrez_votre_nom">Entrez votre nom</string>
+    <string name="label_prenom">Prénom :</string>
+    <string name="placehoder_prenom">Entrez votre prénom</string>
+    <string name="label_sexe">Sexe :</string>
+    <string name="label_date">Date de naissance</string>
+    <string name="sexe_f">F</string>
+    <string name="sexe_m">M</string>
+    <string name="label_nationality">Nationalité</string>
+    <string name="label_loisir">Loisir :</string>
+    <string name="loisirlecture">Lecture</string>
+    <string name="loisir_lecture">Lecture</string>
+    <string name="loisir_sport">Sport</string>
+    <string name="loisir_musique">Musique</string>
+    <string name="placehoder_commentaire">Laisser un commentaire</string>
+    <string name="btn_annuler">Annuler</string>
+    <string name="btn_enregistrer">Enregistrer</string>
+</resources>
