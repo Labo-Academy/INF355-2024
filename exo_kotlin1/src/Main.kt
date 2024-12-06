@@ -5,8 +5,6 @@ import kotlin.system.exitProcess
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main()
 {
-    var prod1 = Produit("Dolac", 5000.0, 5)
-    var prod2 = Produit("Nido", 15000.0, 5)
     var tabProd = mutableListOf<Produit>()
     var choix  = 0
     do

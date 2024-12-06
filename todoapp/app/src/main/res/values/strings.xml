@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="liste_des_taches">Liste des tâches</string>
+    <string name="add_task">Add task</string>
+    <string name="task_name">Titre de la tâche</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
